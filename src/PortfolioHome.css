@@ -1,0 +1,160 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0px 0px 0px  100px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.contact {
+    transition-duration: 2s;
+}
+
+.round {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: gold;
+    border-radius: 50%;
+    margin-right: 3px;
+    transition-duration: 2s;
+}
+
+
+.lists:hover ,.anchor:hover{
+    color: #fff;
+}
+
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color :rgb(247, 152, 44)
+}
+.epo{
+    display: none;
+}
+
+
+.ul-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+.lists {
+    cursor: pointer;
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+}
+ .vv{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+   
+   
+}
+.xx{
+    margin: 10px;
+   list-style: none;
+  
+}
+.menusbar {
+    position: fixed;           
+    top: 80px;                 
+    right: 12px;              
+    width: fit-content;
+    min-height: 200px;
+
+    z-index: 2000;             
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 12px 12px;
+    display: none;
+}
+
+
+
+.icon-bar {
+    display: none;
+    cursor: pointer;
+}
+
+.port-body {
+    background-color: black;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+.section1{
+    z-index: 999;
+}
+.dominname {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dominname.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.anchor{
+   cursor: pointer;
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .ul-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .menusbar{
+        display: flex;
+    }
+
+    .icon-bar {
+        display: block;
+       
+    }
+    
+
+    .ul-list.active {
+        display: flex;
+    }
+}

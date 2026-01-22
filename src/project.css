@@ -1,0 +1,187 @@
+/* ===== Section ===== */
+.prosection{
+    width: 100%;
+    padding: 60px 20px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.proimgs2.disp{
+    display: block;
+    transition: 5s;
+}
+
+/* ===== Grid ===== */
+.projectbox{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-right: 25px;
+}
+
+/* ===== Project Card ===== */
+.project1,
+.project2,
+.project3{
+    background: linear-gradient(180deg, #0f172a, #020617);
+  
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 620px;
+    box-sizing: border-box;
+    color: aliceblue;
+    margin-right: 15px;
+     box-shadow: 0px 0px 15px white;
+}
+
+.project1:hover,.project2:hover,.project3:hover{
+     box-shadow: 0px 0px 35px aqua;
+     transform: translatey(-9px);
+     transition: 0.3s transform;
+
+}
+.pro1{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.heading{
+    color: rgb(247, 152, 44) ;
+}
+
+/* ===== Heading ===== */
+.heading{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ===== Image Container ===== */
+.imagboxs{
+    display: flex;
+    gap: 12px;
+   
+   height: 160px;
+ 
+}
+
+/* 🔥 IMAGE WRAPPER */
+.img-wrap{
+    width: 100%;
+    max-width: 340px;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;           /* IMPORTANT */
+    background: #111827;
+}
+
+/* 🔥 IMAGE */
+.proimgs1,
+.proimgs2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* clarity */
+    transition: transform 0.4s ease;
+    transition: 5s;
+}
+
+/* 🔥 ZOOM EFFECT */
+.img-wrap:hover img{
+    transform: scale(1.15);
+}
+
+/* Hide secondary image if needed */
+.proimgs2{
+    display: none;
+}
+
+/* ===== Description ===== */
+.prodescriptio{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5f5;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+/* Scrollbar */
+.prodescriptio::-webkit-scrollbar{
+    width: 4px;
+}
+.prodescriptio::-webkit-scrollbar-thumb{
+    background: #f97316;
+    border-radius: 10px;
+}
+
+/* ===== Project Name ===== */
+.prossName{
+  color: rgb(247, 152, 44);
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+/* ===== Tools ===== */
+.toolsboxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.viewspros{
+    display: flex;
+    align-items: center;
+    
+}
+
+.toolpro1{
+    font-size: 12px;
+    padding: 6px 10px;
+    background: #111827;
+    border-radius: 20px;
+    color: aqua;
+}
+
+/* ===== Footer ===== */
+.viewpro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+.material-icons{
+    margin-left: 4px;
+}
+.viewspros{
+    cursor: pointer;
+    color: #f97316;
+    font-weight: 500;
+}
+
+.prodate{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ===== Mobile Fix ===== */
+@media (max-width: 768px){
+    .project1,
+    .project2,
+    .project3{
+        min-height: auto;
+    }
+
+    .prodescriptio{
+        max-height: none;
+        overflow: visible;
+    }
+
+    .img-wrap{
+        max-width: 100%;
+        height: 200px;
+    }
+}

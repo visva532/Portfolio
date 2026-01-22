@@ -1,0 +1,173 @@
+.section2 {
+  background: linear-gradient(180deg, #0F172A 0%, #020617 100%);
+
+
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1s ease;
+  flex-direction: row;
+
+
+
+
+
+}
+
+
+.certificate2,.certificate3,.certificate1{
+  color: aliceblue;
+  border: solid 3px ;
+  padding: 10px;
+  background-color: rgb(247, 152, 44) ;
+  display: inline;
+  box-shadow: 0px 0px 5px;
+  
+  
+}
+.certificate2:hover,.certificate3:hover,.certificate1:hover{
+  transition: 1s ease-in-out;
+  background-color: aliceblue;
+  color: black;
+  font-weight: bolder;
+  
+}
+.dates1,.dates2,.dates3{
+  color: aliceblue;
+}
+.compamy1,.compamy2,.compamy3{
+  color: aliceblue;
+}
+.descriptionul1,.descriptionul2,.descriptionul3{
+  color: aqua;
+}
+
+.expbox1 {
+  width: 300px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #e0e0e0;
+  height: 410px;
+  margin: 20px;
+  padding: 30px;
+  
+}
+
+.expbox2 {
+   padding: 30px;
+  height: 410px;
+  width: 300px;
+  border-style: solid;
+  border-width: 3px;
+ border-color: #e0e0e0;
+  margin: 20px;
+
+}
+
+.expbox3 {
+   padding: 30px;
+  height: 410px;
+  width: 300px;
+  border-style: solid;
+  border-width: 3px;
+  margin: 20px;
+   border-color: #e0e0e0;
+  margin: 20px;
+}
+.expbox1,.expbox2,.expbox3{
+  box-shadow: 0px 0px 15px aqua;
+
+}
+.expbox1:hover,.expbox2:hover,.expbox3:hover{
+  box-shadow: 0px 0px 25px aqua;
+  transform: translateY(-10px);
+  transition: transform 0.1s;
+  
+}
+.expbox:hover>:not(:hover){
+  filter:blur(5px);
+  opacity:0.5;
+}
+
+.section2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container1 {
+  margin-left: 40px;
+
+}
+
+.expbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+
+
+.carrerDots {
+  width: 8px;
+
+  height: 8px;
+
+  margin-right: 8px;
+  transition: 2s ease;
+}
+
+.carrerjourny {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.expirence1 {
+  font-weight: bold;
+  color: rgb(247, 152, 44);
+  font-size: 40px;
+
+}
+.vs{
+  animation: rotateIcon 2s linear infinite ;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.carrerDotss {
+  width: 8px;
+
+  height: 8px;
+
+  margin-right: 8px;
+  transition: 2s ease;
+}
+
+
+
+@media screen and (max-width:1000px) {
+  .expbox{
+    justify-content:left;
+    flex-direction: column;
+  }
+  .expbox1,.expbox2,.expbox3{
+    margin-left: 0px;
+    
+    
+  }
+}

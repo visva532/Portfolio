@@ -1,0 +1,119 @@
+.section3 {
+
+  display: flex;
+  font-family: sans-serif;
+
+}
+
+
+.skillsets {
+  display: flex;
+  flex-wrap: wrap;
+  /* 👈 KEY LINE */
+  gap: 10px;
+
+}
+
+.toools:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+.skis {
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+
+
+
+}
+
+
+.skis:hover {
+  box-shadow: 0px 0px 15px aqua;
+}
+
+.skills11 {
+
+  display: flex;
+
+
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.toolssets {
+  display: flex;
+}
+
+.hrline {
+
+  margin: 10px;
+
+}
+
+.skis.see {
+  background-color: rgb(247, 152, 44);
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.expirences1 {
+  font-weight: bold;
+  color: rgb(247, 152, 44);
+  font-size: 40px;
+}
+
+.toools {
+
+  background-color: aqua;
+  padding: 15px;
+
+
+  align-items: center;
+  color: black;
+  font-weight: bold;
+
+}
+
+.containers1 {
+  margin-left: 40px;
+}
+
+.toolssets0 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 10px;
+
+ 
+}.wes {
+  animation: rotateIcon 2s linear infinite ;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.carrerDotss {
+  width: 8px;
+
+  height: 8px;
+
+  margin-right: 8px;
+  transition: 2s ease;
+}
