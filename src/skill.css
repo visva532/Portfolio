@@ -117,3 +117,9 @@
   margin-right: 8px;
   transition: 2s ease;
 }
+@media screen and (max-width: 800px){
+  .containers1 {
+  margin-left: 7px;
+
+}
+}

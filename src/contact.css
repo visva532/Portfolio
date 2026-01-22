@@ -52,4 +52,9 @@
 .contactsection{
     background-color: linear-gradient(180deg, #0F172A 0%, #020617 100%);
 }
+@media screen and (max-width: 800px){
+.contactdiv {
+  margin-left: 7px;
 
+}
+}

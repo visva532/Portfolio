@@ -56,7 +56,7 @@ function Contacts() {
 
                            <div className="mailandhead">
                             <h4 className="emailsd">LinkedIn</h4>
-                            <h4 className="visvaemail">https://www.linkedin.com/in/s-visva532</h4>
+                            <h4 className="visvaemail">www.linkedin.com/in/s-visva532</h4>
                            </div>
 
                         </div>
